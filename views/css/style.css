@@ -1,0 +1,227 @@
+    .login-form {
+        width: 300px;
+        margin: 0 auto;
+        font-family: Tahoma, Geneva, sans-serif;
+    }
+    
+    .login-form h1 {
+        text-align: center;
+        color: #4d4d4d;
+        font-size: 24px;
+        padding: 20px 0 20px 0;
+    }
+    
+    .login-form input[type="password"],
+    .login-form input[type="text"] {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #dddddd;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        width: 50%;
+        padding: 15px;
+        background-color: #535b63;
+        border: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    input[type="button"] {
+        width: 50%;
+        padding: 15px;
+        background-color: #535b63;
+        border: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #4d4d4d;
+        font-size: 24px;
+        padding: 20px 0 20px 0;
+        font-family: Tahoma, Geneva, sans-serif;
+    }
+    
+    .course-form {
+        width: 100%;
+        margin: 0 auto;
+        font-family: Tahoma, Geneva, sans-serif;
+    }
+    
+    button {
+        width: 300px;
+        height: 100%;
+        padding: 15px;
+        background-color: #535b63;
+        border: 0;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    /* .course-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #535b63;
+            border: 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffffff;
+        }   */
+    
+    .disabled-course {
+        background-color: #D0D2DC;
+    }
+    
+    th {
+        font-family: Tahoma, Geneva, sans-serif;
+        color: #4d4d4d;
+        text-align: center;
+    }
+    
+    .question_form input[type="radio"] {
+        font-family: Tahoma, Geneva, sans-serif;
+    }
+    
+    .backBtn {
+        width: 50%;
+        padding: 15px;
+        background-color: #535b63;
+        border: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    .searchArea button {
+        width: 150px;
+        height: 33px;
+        display: inline-block;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 8px;
+    }
+    
+    .table {
+        border-collapse: none;
+        /* border-spacing: 50px; */
+    }
+    
+
+    
+    .table-class button {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .action {
+        width: 50%;
+    }
+    
+    #edit {
+        margin-right: 5px;
+    }
+    /* span.actionSpan {
+            padding-right: 85px;
+            text-align: center;
+        } */
+    
+    .adminBody {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+        color: gray;
+    }
+    
+    tr>td,
+    tr>th,
+    tr>th>span {
+        text-align: center;
+    }
+    
+    td,
+    th {
+        padding-bottom: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+        color: gray;
+        text-align: left;
+    }
+    
+    tr>td {
+        text-align: left;
+        padding-left: 30px;
+    }
+    
+    th:nth-child(1) {
+        padding-left: 30px;
+    }
+    
+    .button-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+    
+    .editBtn,
+    .deleteBtn,
+    .editBtn1,
+    .deleteBtn1 {
+        border-radius: 10px;
+    }
+    
+    .editBtn,
+    .deleteBtn {
+        width: 100px;
+    }
+    
+    #idEdit,
+    #nameEdit,
+    #descriptEdit {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+    }
+    
+    button {
+        border-radius: 10px;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    }
+
+    textarea {
+        resize: none;
+    }

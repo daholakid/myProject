@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>List of courses</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="course-form">
+        <h1>Course List</h1>
+        <table>
+            <thead>
+                <th>Check</th>
+                <th>Name</th>
+                <th>Descript</th>
+            </thead>
+            <tbody class="tbody">
+            </tbody>
+        </table>
+        <br>
+        <button class="gogo" name="next" id="next" value="GO!!!"> GO!!! </button>
+
+    </div>
+    <div class="data-holder"></div>
+    <script>
+        const UserModel = require('../models/users_model.js');
+        const ipc = require('electron').ipcRenderer;
+        const {
+            remote
+        } = require('electron');
+        let selectedId = -1;
+
+        async function goClick(e, courseId) {
+            e.preventDefault();
+
+            await UserModel.getCourse(courseId);
+
+            ipc.send('course-selected', {
+                id: courseId,
+            });
+        }
+
+
+        (async() => {
+            const courses = await UserModel.getCourses('kien.do');
+
+
+            const tbody = document.querySelector('.tbody');
+
+            for (const course of courses) {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                <td><input type="radio" name="radio"/></td>
+                <td>${course.name}</td>
+                <td>${course.descript}</td>`;
+
+                tr.querySelector('input[type="radio"]').addEventListener('change', () => {
+                    selectedId = course.id;
+                });
+
+                if (!course.valid) {
+                    tr.classList.add('disabled-course');
+                    tr.querySelector('td > input').disabled = true;
+                }
+                tbody.appendChild(tr);
+            }
+        })();
+
+        document.querySelector('.gogo')
+            .addEventListener('click', (e) => {
+                if (selectedId === -1) return;
+                goClick(e, selectedId);
+            });
+    </script>
+</body>
+
+</html>

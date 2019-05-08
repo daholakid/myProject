@@ -1,0 +1,16 @@
+button.unavailable {
+    background-color: #B6BACF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 140px;
+}
+
+button.activespan {
+    background-color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 140px;
+}
+

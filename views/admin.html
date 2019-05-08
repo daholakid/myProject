@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/admin.css" rel="stylesheet" type="text/css">
+    <title>Admin</title>
+    <style>
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 20px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+    </style>
+</head>
+
+<body class="adminBody">
+    <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> -->
+
+    <div id="mySidenav" class="sidenav">
+
+        <a href="#" class="courseSelector" onclick="courseSelector()">Courses</a>
+        <a href="#" class="questionSelector" onclick="questionSelector()">Questions</a>
+        <a href="#" class="answerSelector" onclick="answerSelector()">Answers</a>
+    </div>
+    <div class="main">
+        <div class="searchArea">
+
+            <input type="text" name="searchTxt" id="searchTxt" onkeyup="search()">
+            <button type="button" name="addBtn" id="addBtn" value="Add Course" onclick="addClick()">Add Course</button>
+            <button type="button" name="addQBtn" value="Add Question" onclick="addClick1()">Add Question</button>
+
+        </div>
+        <br>
+        <br>
+        <div class="table-div">
+
+        </div>
+    </div>
+
+    <script src="../public/admin.js"></script>
+</body>
+
+</html>
